@@ -12,6 +12,11 @@ int b = 2;
 int c = a + b; // Compiler translates this into binary
 ```
 
+**Additional Info:**
+
+* C++ is an extension of C and supports Object-Oriented Programming (OOP).
+* Compilers not only translate code but also check for errors and optimize performance.
+
 ---
 
 ## IDE (Integrated Development Environment)
@@ -32,6 +37,12 @@ int main() { // Start of the program
 
 * `{}` braces: Everything inside is part of the `int main()` function.
 * `int main()` is the entry point of a C++ program.
+* Every statement ends with a semicolon `;`.
+
+**Additional Info:**
+
+* Comments (`//` or `/* */`) are ignored by the compiler but help explain code.
+* Using `namespace std;` avoids typing `std::` before every standard function.
 
 ---
 
@@ -53,6 +64,11 @@ Example:
 cout << "Hello" << endl;  // New line after Hello
 cout << "World\n";        // New line after World
 ```
+
+**Additional Info:**
+
+* You can print multiple items in one `cout` statement: `cout << a << " " << b << endl;`.
+* `cin` is used to take input from the user.
 
 ---
 
@@ -80,6 +96,11 @@ Variables store data in memory. Every variable has:
 * Must start with a letter or underscore.
 * Case-sensitive (`abc` and `ABC` are different).
 * Cannot reuse the same name in the same scope.
+
+**Additional Info:**
+
+* Constants can be declared using `const` keyword, e.g., `const int MAX = 100;`.
+* `auto` keyword lets the compiler decide the variable type.
 
 ---
 
@@ -122,3 +143,6 @@ int main() {
 * `sizeof()` returns the memory size of a variable.
 * Cannot assign multiple characters to a `char` type using single quotes. Use `string` for multiple characters.
 * `endl` and `"\n"` are interchangeable for moving to a new line.
+* `bool` outputs as `1` (true) or `0` (false) in `cout`.
+* C++ supports **type casting**, e.g., `int(f)` converts float to integer.
+* Always initialize variables to avoid garbage values.
