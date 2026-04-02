@@ -1,0 +1,157 @@
+Type Casting
+int a = 'a';
+this will convert into type caste and give us aschii value of character a 
+
+
+ char ch = 98;
+    cout<< ch <<endl;
+
+this will done the same
+
+
+Character 1 byte 8 bits
+
+___ ___ ___ ___
+max =a^8 -1
+min=0
+
+ char ch1 = 123456;
+    cout<< ch1 <<endl;
+
+if i give larger values then it takes larger value and give us the value of some last bits
+integer 4 byte 32 bit
+
+___ ___ ___ ___
+max =a^32 -1
+min=0
+
+
+
+How -ve no are stored 
+
+if positive number first bit is 0 and if negative number first bit is 1
+
+-ve no -5
+
+    1.ignore the -ve sign
+    2.Convert into binary 
+            00000000101
+        take 2's compliment and store it 
+            first take 1's compliment 
+        Now take 2's compliment
+            11111111010
+        just add 1 in 1's compliment
+            111111111010
+            +          1
+            ____________
+            111111111011
+
+
+
+
+
+If you have to print -ve number
+
+    1111 1111 1111 1011
+
+    1's compliment = 0000 0000 0000 0100
+    2's compliment = 0000 0000 0000 0100
+                    +                  1
+                    _____________________
+                    0000 0000 0000 0101
+
+
+you are using 2 representation to show a single number 
+so we use -2^31-1 
+
+
+default 
+ int i =1;
+
+unsigned int a=12;
+
+if you write -12 by mistak then it gives us a big number
+
+
+
+operators
+Arithmetic +,-,*,1  % Modolous operator
+
+2/5 
+normal math 0.4
+but in program 0
+
+
+int / int = int 
+float / int = float
+double / int = double
+
+
+
+#include <iostream>
+using namespace std;
+int main (){
+    int a = 5;
+    cout<< a/20<<endl;
+
+    cout << a/20.0<< endl;
+
+    float f= 5.0;
+
+    cout<< f/20 <<endl;
+
+    
+}
+
+
+
+Relational operators
+   a = b
+   a > b
+   a < b
+   a >= b
+   a <= b
+   a != b
+
+   int a = 2;
+    int b= 3;
+    bool first = (a==b);
+    cout<< first << endl;
+
+     bool second = (a>b);
+    cout<< second << endl;
+
+     bool third = (a<b);
+    cout<< third << endl;
+
+     bool fourth = (a>=b);
+    cout<< fourth << endl;
+
+     bool fifth = (a<=b);
+    cout<< fifth << endl;
+
+     bool sixth = (a!=b);
+    cout<< sixth << endl;
+
+
+   assignment operator =
+   int a = b;
+
+
+
+Logical operator
+    &&
+    ||
+    !
+
+
+Bitwise Operator
+
+
+
+compilation process
+First program
+Every Line Reason
+Data Types / Variables
++ve / -ve
+Operators
